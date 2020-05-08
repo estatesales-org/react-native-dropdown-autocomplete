@@ -52,10 +52,10 @@ export default class Dropdown extends PureComponent {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(prevProps) {
     const {value} = this.props;
-    if (nextProps.value !== value) {
-      this.setState({value: nextProps.value});
+    if (prevProps.value !== value) {
+      this.setState({value});
     }
   }
 
