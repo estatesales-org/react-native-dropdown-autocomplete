@@ -162,6 +162,7 @@ Change valueExtractor and pass the data to Autocomplete without fetchDataUrl
  pickerStyle       | Styles for item picker view                   |   Object | -
  containerStyle    | Styles for dropdown container view            |   Object | -
  scrollStyle       | Styles for dropdown flatlist                  |   Object | -
+ keyboardAwareStyle | Styles for keyboard aware scroll view        |   Object | -
  scrollToInput     | Focus on selected field                       | Function | -
  handleSelectItem  | Selection callback (args: item, index)        | Function | -
  onDropdownShow    | Show keyboard                                 | Function | -

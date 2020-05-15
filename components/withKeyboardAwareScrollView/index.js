@@ -66,12 +66,16 @@ const withKeyboardAwareScrollView = WrappedComponent => {
     }
 
     render() {
+      const {
+        styles: {keyboardAwareStyle: scrollStyle},
+      } = this.props;
+
       return (
         <KeyboardAwareScrollView
           innerRef={ref => {
             this.scroll = ref;
           }}
-          style={styles.container}
+          style={[styles.container, scrollStyle]}
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{flexGrow: 1}}

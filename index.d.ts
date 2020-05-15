@@ -35,6 +35,7 @@ type AutocompleteProps = {
     pickerStyle?: StyleProp<TextStyle>;
     containerStyle?: StyleProp<ViewStyle>;
     scrollStyle?: StyleProp<ViewStyle>;
+    keyboardAwareStyle?: StyleProp<ViewStyle>;
 
     scrollToInput?: (ev: any) => void;
     handleSelectItem: (item: any, index: number) => void;
