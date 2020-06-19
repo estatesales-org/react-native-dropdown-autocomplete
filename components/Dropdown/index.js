@@ -7,6 +7,7 @@ import {
   FlatList,
   Text,
   ViewPropTypes,
+  TextPropTypes,
 } from "react-native";
 import PropTypes from "prop-types";
 import Ripple from "react-native-material-ripple";
@@ -572,7 +573,7 @@ Dropdown.propTypes = {
   disabledItemColor: PropTypes.string,
   baseColor: PropTypes.string,
 
-  itemTextStyle: Text.propTypes.style,
+  itemTextStyle: TextPropTypes.style,
   separatorStyle: (ViewPropTypes || View.propTypes).style,
   listFooterStyle: (ViewPropTypes || View.propTypes).style,
   listHeaderStyle: (ViewPropTypes || View.propTypes).style,
